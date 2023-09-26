@@ -1,0 +1,170 @@
+.post-write-modal,
+.post-modify-modal {
+    .p-dialog-header {
+        display: none !important;
+    }
+    .p-dialog-content {
+        border-radius: 6px;
+        padding: 1.5rem 1.5rem 1.5rem 1.5rem !important;
+        .post-write-field {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+        .p-inputtext {
+            width: 100%;
+            height: 40px;
+            margin-bottom: 10px;
+        }
+    }
+    .p-editor-container {
+        height: 250px;
+        margin-bottom: 15px;
+        .p-editor-toolbar {
+            border: 1px solid #dee2e6;
+            height: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .ql-toolbar.ql-snow .ql-formats {
+        margin-right: 10px !important;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .ql-snow.ql-toolbar button,
+    .ql-snow .ql-toolbar button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        display: inline-block;
+        float: left;
+        height: 24px;
+        padding: 2px 4px;
+        width: 24px;
+    }
+    .ql-clean {
+        display: none !important;
+    }
+
+    .p-fileupload-content {
+        padding: 0 !important;
+        overflow-y: auto !important;
+        height: 120px !important;
+        .p-progressbar {
+            display: none !important;
+        }
+    }
+}
+.p-fileupload-row {
+    height: 40px;
+    padding: 0 10px !important;
+}
+.p-fileupload-row img {
+    width: 40px;
+}
+
+.p-fileupload-row div {
+    width: calc(90% - 40px) !important;
+    height: 100% !important;
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-fileupload-row div + div {
+    width: 10% !important;
+    padding: 0 !important;
+    justify-content: flex-end !important;
+}
+
+.p-fileupload .p-fileupload-row > div > span {
+    display: none;
+}
+.post-view-modal {
+    .p-editor-container {
+        height: 250px;
+        margin-bottom: 15px;
+        overflow: hidden;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+
+        .p-editor-toolbar {
+            display: none;
+        }
+        .p-editor-content {
+            border: none !important;
+            border-radius: 0 !important;
+        }
+    }
+    .fileList-area {
+        height: 150px;
+        width: 100%;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        .filewrap {
+            height: 50px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .fileName {
+                width: 70%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+            }
+            button {
+                color: #ffffff;
+
+                height: 80%;
+                box-sizing: border-box;
+
+                width: 100px;
+                font-size: 14px;
+                font-size: flex;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+.button-fied {
+    width: 100%;
+    display: flex;
+    margin-top: 15px;
+    justify-content: flex-end;
+    button {
+        &:last-child {
+            margin-left: 10px;
+        }
+    }
+}
+
+.p-fileupload-buttonbar {
+    .custom-none-btn {
+        display: none !important;
+    }
+    .p-button {
+        width: 10px !important;
+        height: 10px !important;
+        padding: 15px !important;
+    }
+}
+.drag-msg{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

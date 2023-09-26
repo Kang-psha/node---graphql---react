@@ -1,0 +1,26 @@
+scalar Upload
+# type file {
+#     Url: String!
+# }
+type Post {
+    id: ID
+    title: String!
+    desc: String!
+    userName: String!
+    authority: Boolean!
+    files: [String]!
+    date: String!
+}
+
+type FileInfo {
+    fileName: String!
+    fileUrl: String!
+}
+
+type Mutation {
+    PostUpload(files: [Upload], title: String!, desc: String!): Boolean
+    PostModify(files: [Upload], title: String!, desc: String!, id:ID!): Boolean
+    PostDelete(id:ID!): Boolean 
+    # fileUpload(files: [Upload]! ): [FileInfo]!
+    PostList: [Post]
+}

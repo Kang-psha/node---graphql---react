@@ -1,0 +1,140 @@
+.modal-content {
+    background-color: rgba(19, 35, 47, 0.9);
+    width: 100%;
+    padding: 0px 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+
+    .close-btn {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        /* margin: 5px; */
+        /* box-sizing: border-box; */
+        background-color: #ffffff00;
+        font-weight: 900;
+        color: white;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+        padding: 0;
+        transition: 0.3s;
+        &:hover {
+            color: #14b8a6;
+        }
+    }
+}
+.tab-group {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 30px;
+    display: flex;
+    .tab.active {
+        background-color: #14b8a6;
+    }
+    .tab {
+        width: 50%;
+        height: 100%;
+        color: white;
+        display: flex;
+        background-color: rgba(160, 179, 176, 0.25);
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover {
+            background-color: #14b8a5b7;
+        }
+    }
+}
+
+.tab-content {
+    .filed {
+        .field-wrap {
+            position: relative;
+            margin-bottom: 40px;
+        }
+    }
+
+    label {
+        position: absolute;
+        transform: translateY(6px);
+        left: 13px;
+        top: 0px;
+        color: rgba(white, 0.5);
+        transition: all 0.25s ease;
+        -webkit-backface-visibility: hidden;
+        pointer-events: none;
+        font-size: 22px;
+        .req {
+            margin: 2px;
+            color: #1ab188;
+        }
+    }
+
+    input {
+        font-size: 22px;
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 5px 10px;
+        background: none;
+        background-image: none;
+        border: 1px solid #a0b3b0;
+        color: white;
+        border-radius: 0;
+        box-sizing: border-box;
+        transition: border-color 0.25s ease, box-shadow 0.25s ease;
+
+        &:focus {
+            outline: 0;
+            border-color: #14b8a5;
+        }
+    }
+    input:valid + label {
+        transform: translateY(50px);
+        left: 2px;
+        font-size: 14px;
+    }
+    input:focus + label {
+        color: white;
+    }
+}
+
+.login-modal {
+    .p-dialog-header {
+        border-bottom: 0 none;
+        background: rgba(19, 35, 47, 0.9) !important;
+        padding: 10px 30px !important;
+    }
+    .p-dialog-content {
+        background: none !important;
+        color: #495057 !important;
+        padding: 0 !important;
+    }
+    .button {
+        width: 100%;
+        border: 0;
+        outline: none;
+        border-radius: 0;
+        padding: 15px 0;
+        font-size: 2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        background: #14b8a6;
+        color: white;
+        transition: all 0.5s ease;
+        &:hover,
+        &:focus {
+            background-color: #14b8a5b7;
+        }
+    }
+}

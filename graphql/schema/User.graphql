@@ -1,0 +1,36 @@
+type User {
+    id: ID
+    name: String!
+    email: String!
+    password: String!
+    authority: Int!
+}
+type token {
+    signature: String!
+    exp: String!
+}
+type tokens {
+    accessToken: token!
+    refreshToken: token!
+}
+
+type returnFom {
+    success: Boolean!
+    message: String!
+}
+
+type Query {
+    getUser(id: ID!): User
+    # Users: [User!]
+    # getLoginState : Boolean!
+}
+
+type Mutation {
+    UserLogin(email: String!, password: String!): tokens
+    UserSignUp(email: String!, password: String!, name: String): returnFom!
+
+    UserLogout: String!
+
+    getUserInfo: User
+    getAccessToken: token
+}
